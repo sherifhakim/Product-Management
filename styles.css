@@ -173,14 +173,40 @@ th {
   background-color: #0056b3;
 }
 
-@media only screen and (max-width: 768px) {
-  .crud {
-    width: 90%;
-  }
+@media only screen and (max-width: 600px) {
   .inputs input {
+    width: calc(50% - 10px); /* Adjust input width */
+  }
+
+  .price input {
+    width: 40%; /* Adjust price input width */
+  }
+
+  table {
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+    display: block;
     width: 100%;
   }
-  .price input {
-    width: 40%;
+
+  th,
+  td {
+    padding: 10px 8px; /* Adjust cell padding */
+    text-align: center;
+    font-size: 7px;
+    font-weight: 600;
+  }
+
+  th {
+    font-size: 8px;
+  }
+
+  /* Ensure table data cells are displayed as blocks for better readability */
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .none {
+    display: none;
   }
 }
