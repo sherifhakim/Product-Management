@@ -192,21 +192,18 @@ th {
   td {
     padding: 10px 8px; /* Adjust cell padding */
     text-align: center;
-    font-size: 7px;
+    font-size: 13px;
     font-weight: 600;
+    display: table-cell; /* Display th and td on the same row */
+    border: 1px solid #ddd; /* Add border for clarity */
   }
 
   th {
-    font-size: 8px;
+    background-color: #020617; /* Add background color to differentiate header */
   }
 
   /* Ensure table data cells are displayed as blocks for better readability */
   tr {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .none {
-    display: none;
+    display: table-row; /* Display tr as a table row */
   }
 }
